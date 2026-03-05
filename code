@@ -250,7 +250,7 @@
 
                             <div class="button-container">
     <!-- Parent button redirected to Google as requested -->
-    <a href="https://159.195.59.55.nip.io/" class="login-button" aria-label="Parents">
+    <a href="https://lausdschoology.azurewebsites.net/en-US/Login/Parent" class="login-button" aria-label="Parents">
         <img src="https://lausdschoology.azurewebsites.net/assets/images/schoology/parentsBTN.png" alt="Parents" style="max-width: 250px">
     </a>
 
