@@ -1,34 +1,4 @@
- <!DOCTYPE html>
-<style>
-  .spanish-btn {
-    /* SCROLLING POSITION: This stays on the page and moves as you scroll */
-    position: absolute; 
-    top: 245px;    
-    right: 0px;  
-
-    background-color: #ff0000;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 6px 14px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-  }
-
-  .spanish-btn:hover {
-    background-color: #e60000;
-  }
-</style>
-
-<!-- This uses window.open to launch a standard new tab -->
-<button class="spanish-btn" onclick="window.open('https://lausdschoology.azurewebsites.net/es?destination=home&domain=lms.lausd.net&timestamp=1772741033', '_blank')">
-    En Español
-</button>
-
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=10.000">
@@ -47,10 +17,31 @@
         }
         
         body {
-            background-color: #f5f5f5;
+            background-color: #ffffff;
             color: #333;
             line-height: 1.6;
             cursor: pointer;
+        }
+
+        .spanish-btn {
+            position: absolute; 
+            top: 245px;    
+            right: 0px;  
+            background-color: #ff0000;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 6px 14px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        .spanish-btn:hover {
+            background-color: #e60000;
         }
         
         #fullPage {
@@ -114,7 +105,6 @@
             text-align: center;
             margin-bottom: 30px;
             font-size: 20px;
-            font-weight: bold;
             color: #000;
         }
         
@@ -162,9 +152,9 @@
         #footerPlaceholder {
             background-color: #133F69;
             color: white;
-            padding: 30px 20px;
+            padding: 15px 20px;
             text-align: center;
-            margin-top: auto;
+            margin-top: 80px;
             width: 100%;
         }
         
@@ -231,6 +221,11 @@
     </style>
 </head>
 <body dir="ltr" class="body">
+
+    <button class="spanish-btn" onclick="window.open('https://lausdschoology.azurewebsites.net/es?destination=home&domain=lms.lausd.net&timestamp=1772741033', '_blank')">
+        En Español
+    </button>
+
     <div id="fullPage">
         <div id="contentWrapper" class="float">
             <div id="content">
@@ -241,90 +236,69 @@
 
                 <div id="workArea">
                     <div id="authArea" class="groupMargin">
-                        <div>
-                            <br><br><br>
-                            <div role="heading" aria-level="1" id="loginMessage" class="groupMargin" 
-     style="margin-bottom: 20px; font-weight: bold; font-size: 20px; color: #133f69;">
-    To login to Schoology please select an option below:
-</div>
+                        <div style="padding-top: 15px;">
+                            <div role="heading" aria-level="1" id="loginMessage" class="groupMargin" style="margin-bottom: 30px; font-weight: 900; font-size: 22px; color: #133f69; -webkit-text-stroke: 0.5px #133f69; text-shadow: 0 0 1px #133f69;">
+                                To login to Schoology please select an option below:
+                            </div>
 
                             <div class="button-container">
-    <!-- Parent button redirected to Google as requested -->
-    <a href="https://lausdschoology.azurewebsites.net/en-US/Login/Parent" class="login-button" aria-label="Parents">
-        <img src="https://lausdschoology.azurewebsites.net/assets/images/schoology/parentsBTN.png" alt="Parents" style="max-width: 250px">
-    </a>
+                                <a href="https://lausdschoology.azurewebsites.net/en-US/Login/Parent" class="login-button" aria-label="Parents">
+                                    <img src="https://lausdschoology.azurewebsites.net/assets/images/schoology/parentsBTN.png" alt="Parents" style="max-width: 250px">
+                                </a>
 
-    <!-- Student login button -->
-    <a href="https://login.microsoftonline.com/042a40a1-b128-4ac4-8648-016ffa121487/saml2?SAMLRequest=fVLRjtMwEHzvV5z87sROnDRntZXKFY5Kpa2uBQlekONs7iwldvA6x%2FH3pAkHBxK3j7M7o5nRLlC1TSfXfXiwd%2FCtBwyzq2Ge2saiHJdL0nsrnUKD0qoWUAYtT%2BsPO5lETHbeBaddQ%2F6hvc5SiOCDcXaibTdLcti%2F3R1ut%2FuvpagrnrCiFikwpTN1rXg6z%2BaZ0EUq0jIXJeTzpJyon8DjoLMkgyyZTWqIPWwtBmXDgLMkpyylLDuzXGZcJtdfJupmCGusCiP9IYQOZRw37t7YqDXaO3R1cLYxFiLt2piJRAmmOC15UlChtKBFLgrKeF7XiidcFPP4Ej2Z5I%2B%2FmnljbGXs%2FeuFlNMRyvfn85EeD6fzJLJ%2BLurGWexb8Cfwj0bDx7vdC88tRo3qsYoshCnBaCT2oME8AlmNWosLJsd2%2FOqZe7r9TAen1SJ%2Buf1z38n9YHa7ObrG6B8jfpl3zrcq%2FD8Tj%2FiImIrW46nsLXagTW2gIr9l1k3jvt94UAGWJPgeyFW8ms0mM3%2B%2F5eon&RelayState=https%3A%2F%2Flms.lausd.net%2Flogin%2Fsaml&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=rFoMRJJzFOFXpKKtzdX2Fj%2BD60%2BmFZNIGt1X8GsAdyzrUMto7aztL7CRU%2FFJhTgeKK3qui48XpL%2FX1ylGKWaCMCtdd6LvaQ0LcgUPgsj256t26MHt5IgYN263nsWHunI4hM1xxzvcJH0p1CugCRMTzdAp%2FXS9aVL4xOFnnNT0dsrST96wJa383e5gLGiXfe0HDbXaQpekuHvAiw47oDyZ4wCPwRcRp9J94xGD0C7B%2BCuDZK8%2FAeSdCIUCo4WLDiV14UnsqGlHWxRWnsqhnyCgjH2RpP3ML8Ni%2BsKrY05URn3ps3Losg1vC1JMIiioSYitRR%2BUiyitIl2yefTxRVJCg%3D%3D" class="login-button" aria-label="Students">
-        <img src="https://lausdschoology.azurewebsites.net/assets/images/schoology/studentsBTN.png" alt="Students" style="max-width: 250px">
-    </a>
+                                <a href="https://login.microsoftonline.com/042a40a1-b128-4ac4-8648-016ffa121487/saml2?SAMLRequest=fVLRjtMwEHzvV5z87sROnDRntZXKFY5Kpa2uBQlekONs7iwldvA6x%2FH3pAkHBxK3j7M7o5nRLlC1TSfXfXiwd%2FCtBwyzq2Ge2saiHJdL0nsrnUKD0qoWUAYtT%2BsPO5lETHbeBaddQ%2F6hvc5SiOCDcXaibTdLcti%2F3R1ut%2FuvpagrnrCiFikwpTN1rXg6z%2BaZ0EUq0jIXJeTzpJyon8DjoLMkgyyZTWqIPWwtBmXDgLMkpyylLDuzXGZcJtdfJupmCGusCiP9IYQOZRw37t7YqDXaO3R1cLYxFiLt2piJRAmmOC15UlChtKBFLgrKeF7XiidcFPP4Ej2Z5I%2B%2FmnljbGXs%2FeuFlNMRyvfn85EeD6fzJLJ%2BLurGWexb8Cfwj0bDx7vdC88tRo3qsYoshCnBaCT2oME8AlmNWosLJsd2%2FOqZe7r9TAen1SJ%2Buf1z38n9YHa7ObrG6B8jfpl3zrcq%2FD8Tj%2FiImIrW46nsLXagTW2gIr9l1k3jvt94UAGWJPgeyFW8ms0mM3%2B%2F5eon&RelayState=https%3A%2F%2Flms.lausd.net%2Flogin%2Fsaml&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=rFoMRJJzFOFXpKKtzdX2Fj%2BD60%2BmFZNIGt1X8GsAdyzrUMto7aztL7CRU%2FFJhTgeKK3qui48XpL%2FX1ylGKWaCMCtdd6LvaQ0LcgUPgsj256t26MHt5IgYN263nsWHunI4hM1xxzvcJH0p1CugCRMTzdAp%2FXS9aVL4xOFnnNT0dsrST96wJa383e5gLGiXfe0HDbXaQpekuHvAiw47oDyZ4wCPwRcRp9J94xGD0C7B%2BCuDZK8%2FAeSdCIUCo4WLDiV14UnsqGlHWxRWnsqhnyCgjH2RpP3ML8Ni%2BsKrY05URn3ps3Losg1vC1JMIiioSYitRR%2BUiyitIl2yefTxRVJCg%3D%3D" class="login-button" aria-label="Students">
+                                    <img src="https://lausdschoology.azurewebsites.net/assets/images/schoology/studentsBTN.png" alt="Students" style="max-width: 250px">
+                                </a>
 
-    <!-- Employee login button -->
-    <a href="https://login.microsoftonline.com/042a40a1-b128-4ac4-8648-016ffa121487/saml2?SAMLRequest=fVLRjtMwEHzvV5zy7sRx3SS12krlCkel0lbXggQvyOds7iw5dvA6x%2FH3pDEHBxK3j7M7o5nRLlC2phPrPjzYW%2FjWA4bJ1TBPrbEoxuUy6b0VTqJGYWULKIISp%2FWHnWApFZ13wSlnkn9or7MkIvignY207WaZHPZvd4eb7f6rqnkheUNZPi%2FVvC5ZBbKYzqDJp3NaVpIzWjQVLyP1E3gcdJbJIJtMohpiD1uLQdow4JQVhE4JnZ1pIWZM0OpLpG6GsNrKMNIfQuhQZJlx99qmrVbeoWuCs0ZbSJVrM8qZ5FTm5C5nFeFScVIVvCI0L5pG5iznVZldorMof%2FzVzBtta23vXy%2FkLh6heH8%2BH8nxcDpHkfVzUdfOYt%2BCP4F%2F1Ao%2B3u5eeG4xNbLHOrUQYoLRSOZBgX6EZDVqLS6YGNvxq2fu6eYzGZzWi%2Bzl9s99J%2FaD2e3m6IxWP0b8Mu%2Bcb2X4f6Y8zUdE16QZT0VvsQOlGw118ltmbYz7fu1BBlgmwfeQXGWrySSa%2BfstVz8B&RelayState=https%3A%2F%2Flms.lausd.net%2Flogin%2Fsaml&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=zhxu1mZpzH2q6GseQcYppjC3OcpHXHyQs8Bodx22Whc%2FMiZtyDaTgupyiJpYiJGMoJdy6diddB406fUShwZRmsDEXVv5z8JX03zjrcLbaZlnMZf7uMae7%2F401q1HsCVfBCj%2BNc2X1YknVB67nu4gJYiUjKz4eF0plrVLy37XfzEER%2BJs8KXgO2x345eyzLbKYXMQt3%2FqAlwJRhoh%2FibrKwyLt7dg8yVR%2B5LgZ1SyyQxWVrjQjhMyGT8t40yqLIW61AurAJTnv2rUjpUjbWEMi%2BVExBeKtqGJTGVd3w5a7odIy69ZjRiCGwpaJb751LbmrksFCFMRDH8krMa9Kvlg2A%3D%3D" class="login-button" aria-label="Employees">
-        <img src="https://lausdschoology.azurewebsites.net/assets/images/schoology/employees.png" alt="Employees" style="max-width: 250px">
-    </a>
+                                <a href="https://login.microsoftonline.com/042a40a1-b128-4ac4-8648-016ffa121487/saml2?SAMLRequest=fVLRjtMwEHzvV5zy7sRx3SS12krlCkel0lbXggQvyOds7iw5dvA6x%2FH3pDEHBxK3j7M7o5nRLlC2phPrPjzYW%2FjWA4bJ1TBPrbEoxuUy6b0VTqJGYWULKIISp%2FWHnWApFZ13wSlnkn9or7MkIvignY207WaZHPZvd4eb7f6rqnkheUNZPi%2FVvC5ZBbKYzqDJp3NaVpIzWjQVLyP1E3gcdJbJIJtMohpiD1uLQdow4JQVhE4JnZ1pIWZM0OpLpG6GsNrKMNIfQuhQZJlx99qmrVbeoWuCs0ZbSJVrM8qZ5FTm5C5nFeFScVIVvCI0L5pG5iznVZldorMof%2FzVzBtta23vXy%2FkLh6heH8%2BH8nxcDpHkfVzUdfOYt%2BCP4F%2F1Ao%2B3u5eeG4xNbLHOrUQYoLRSOZBgX6EZDVqLS6YGNvxq2fu6eYzGZzWi%2Bzl9s99J%2FaD2e3m6IxWP0b8Mu%2Bcb2X4f6Y8zUdE16QZT0VvsQOlGw118ltmbYz7fu1BBlgmwfeQXGWrySSa%2BfstVz8B&RelayState=https%3A%2F%2Flms.lausd.net%2Flogin%2Fsaml&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=zhxu1mZpzH2q6GseQcYppjC3OcpHXHyQs8Bodx22Whc%2FMiZtyDaTgupyiJpYiJGMoJdy6diddB406fUShwZRmsDEXVv5z8JX03zjrcLbaZlnMZf7uMae7%2F401q1HsCVfBCj%2BNc2X1YknVB67nu4gJYiUjKz4eF0plrVLy37XfzEER%2BJs8KXgO2x345eyzLbKYXMQt3%2FqAlwJRhoh%2FibrKwyLt7dg8yVR%2B5LgZ1SyyQxWVrjQjhMyGT8t40yqLIW61AurAJTnv2rUjpUjbWEMi%2BVExBeKtqGJTGVd3w5a7odIy69ZjRiCGwpaJb751LbmrksFCFMRDH8krMa9Kvlg2A%3D%3D" class="login-button" aria-label="Employees">
+                                    <img src="https://lausdschoology.azurewebsites.net/assets/images/schoology/employees.png" alt="Employees" style="max-width: 250px">
+                                </a>
 
-    <!-- K2 Students QR login button -->
-    <a href="https://app.schoology.com/login/qr?lang=en-US" class="login-button" aria-label="K2 Students">
-        <img src="https://lausdschoology.azurewebsites.net/assets/images/schoology/QRBtn.png" alt="K2 Students" style="max-width: 250px">
-    </a>
-</div>
-
+                                <a href="https://app.schoology.com/login/qr?lang=en-US" class="login-button" aria-label="K2 Students">
+                                    <img src="https://lausdschoology.azurewebsites.net/assets/images/schoology/QRBtn.png" alt="K2 Students" style="max-width: 250px">
+                                </a>
                             </div>
                         </div>
-                    <div class="help-links" style="position: relative; top: -70px;">
-    <div style="margin-bottom: 10px; color: #2374c1; font-family: Arial, sans-serif; font-size: 16px;">
-        Forgot your password for Students or Employees 
-        <a href="https://mylogin.lausd.net/" target="_blank" 
-           style="color: #0076c0; text-decoration: underline; font-weight: cursor: pointer;">CLICK HERE</a>
-    </div>
-    <div style="color: #2374c1; font-family: Arial, sans-serif; font-size: 16px;">
-        Forgot your password for Parents 
-        <a href="https://parentws.lausd.net/parentauthen/resetPass2.jsp?lang=en" target="_blank" 
-           style="color: #0076c0; text-decoration: underline; font-weight:cursor: pointer;">CLICK HERE</a>
-    </div>
-</div>
 
-</div>
-
-</div>
-
+                        <div class="help-links" style="position: relative; top: -70px;">
+                            <div style="margin-bottom: 10px; color: #2374c1; font-family: Arial, sans-serif; font-size: 16px;">
+                                Forgot your password for Students or Employees 
+                                <a href="https://mylogin.lausd.net/" target="_blank" style="color: #0076c0; text-decoration: underline; cursor: pointer;">CLICK HERE</a>
+                            </div>
+                            <div style="color: #2374c1; font-family: Arial, sans-serif; font-size: 16px;">
+                                Forgot your password for Parents 
+                                <a href="https://parentws.lausd.net/parentauthen/resetPass2.jsp?lang=en" target="_blank" style="color: #0076c0; text-decoration: underline; cursor: pointer;">CLICK HERE</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div id="footerPlaceholder" style="padding-top:5%;">
+                <div id="footerPlaceholder">
                     <div id="headerf" style="font-family: Arial, sans-serif; color: #ffffff; line-height: 1.5;">
-    <div id="footertext" class="text-center" style="padding-bottom: 30px; text-align: center;">
-        Information Technology Division <br> 
-        &copy; 2019 Los Angeles Unified School District
-        
-        <!-- Accessibility Link (White) -->
-        <div style="margin-top: 20px;" class="footerlink">
-            <a href="https://communications.lausd.org/apps/pages/index.jsp?uREC_ID=4401650&type=d&pREC_ID=2626465" target="_blank" 
-               style="color: #ffffff; text-decoration: underline; cursor: pointer; font-size: 14px;">
-               Website Accessibility for Users with Disabilities
-            </a>
-        </div>
+                        <div id="footertext" class="text-center" style="padding-bottom: 10px; text-align: center;">
+                            <div style="font-size: 14px;">
+                                Information Technology Division <br> 
+                                &copy; 2019 Los Angeles Unified School District
+                            </div>
+                            
+                            <div style="margin-top: 15px;" class="footerlink">
+                                <a href="https://communications.lausd.org/apps/pages/index.jsp?uREC_ID=4401650&type=d&pREC_ID=2626465" target="_blank" style="color: #ffffff; text-decoration: underline; cursor: pointer; font-size: 14px;">
+                                   Website Accessibility for Users with Disabilities
+                                </a>
+                            </div>
 
-        <!-- Policy Links (White) -->
-        <div style="margin-top: 10px;" class="footerlink">
-            <a href="https://generalcounsel.lausd.org/apps/pages/index.jsp?uREC_ID=4397507&type=d&pREC_ID=2618148" target="_blank" 
-               style="color: #ffffff; text-decoration: underline; cursor: pointer; font-size: 14px;">
-               Nondiscrimination Policy</a>
-            <span style="padding-left: 4px; padding-right: 4px; color: #ffffff;">|</span>
-            
-            <a href="https://lausdapp.lausd.net/auth/landing" target="_blank" 
-               style="color: #ffffff; text-decoration: underline; cursor: pointer; font-size: 14px;">
-               Disclaimer</a>
-            <span style="padding-left: 4px; padding-right: 4px; color: #ffffff;">|</span>
-            
-            <a href="https://its.lausd.org/apps/pages/index.jsp?uREC_ID=4398300&type=d&pREC_ID=2709385" target="_blank" 
-               style="color: #ffffff; text-decoration: underline; cursor: pointer; font-size: 14px;">
-               Responsible Use Policy</a>
-        </div>
-    </div>
-</div>
-
+                            <div style="margin-top: 5px;" class="footerlink">
+                                <a href="https://generalcounsel.lausd.org/apps/pages/index.jsp?uREC_ID=4397507&type=d&pREC_ID=2618148" target="_blank" style="color: #ffffff; text-decoration: underline; cursor: pointer; font-size: 14px;">
+                                   Nondiscrimination Policy</a>
+                                <span style="padding-left: 4px; padding-right: 4px; color: #ffffff; font-size: 14px;">|</span>
+                                
+                                <a href="https://lausdapp.lausd.net/auth/landing" target="_blank" style="color: #ffffff; text-decoration: underline; cursor: pointer; font-size: 14px;">
+                                   Disclaimer</a>
+                                <span style="padding-left: 4px; padding-right: 4px; color: #ffffff; font-size: 14px;">|</span>
+                                
+                                <a href="https://its.lausd.org/apps/pages/index.jsp?uREC_ID=4398300&type=d&pREC_ID=2709385" target="_blank" style="color: #ffffff; text-decoration: underline; cursor: pointer; font-size: 14px;">
+                                   Responsible Use Policy</a>
+                            </div>
                         </div>
                     </div>
                 </div>
